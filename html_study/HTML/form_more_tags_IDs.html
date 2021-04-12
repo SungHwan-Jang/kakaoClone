@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- label for / input id 같은 이름으로 맞춰준다.
+     tag 하나당 한개의 id만 가질 수 있다. and unique 해야 함 -->
+<form>
+<!--  label 클릭시 해당 아이디에 포커싱 된다. (for - id matching)-->
+  <label for="website"> Website </label>
+  <input required placeholder="url" id="website"  type="url">
+<!--  required 때문에 버튼 클릭시 url 포맷이 아닌 경우 err 발생 -->
+  <input type="submit" value="Go to website">
+</form>
+
+<form>
+  <label for="email_"> Website </label>
+  <input required placeholder="email" id="email_"  type="email">
+  <input type="submit" value="Go to email">
+</form>
+
+<form>
+  <label for="profile"> Profile Photo </label>
+  <input id="profile"  type="file" accept="image/*">
+
+  <label for="first_name"> First name </label>
+  <input id="first_name" required placeholder="name" type="text"/>
+
+  <label for="last_name"> Last name </label>
+  <input id="last_name" required placeholder="last name" type="text"/>
+
+  <label for="password"> password </label>
+  <input id="password" required placeholder="password" minlength="10" type="password"/>
+
+  <input type="submit" value="Create Account">
+</form>
+</body>
+</html>

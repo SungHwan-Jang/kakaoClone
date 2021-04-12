@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- div 와 같은 기능이지만 header를 의미한다는 것을 쉽게 알 수 있다.-->
+<!-- 모두 div로 대체가 가능하지만, 가독성을 위하여 아래와 같이 쓴다. -->
+<!-- 아래와 같이 나누는 것을 semantic tag 라고 한다. (document와  content를 명확히 나누자) -->
+<header>
+  <h1> header - The hwan time</h1>
+</header>
+
+<main>
+  <p> main - hello! my world! </p>
+  <address> address - 123 Road Altavista </address>
+</main>
+<span>
+  <p> span - for short text region </p>
+</span>
+<footer>
+  footer - &copy; 2021 Sunghwan
+</footer>
+
+<!-- div 는 division 이며, 분할이 가능케 한다. -->
+<form>
+  <div>
+    <label for="website"> Website </label>
+    <input required placeholder="url" id="website"  type="url">
+    <input type="submit" value="Go to website">
+  </div>
+
+  <div>
+    <label for="email_"> Email </label>
+    <input required placeholder="email" id="email_"  type="email">
+  </div>
+  <input type="submit" value="Go to email">
+
+</form>
+</body>
+</html>
